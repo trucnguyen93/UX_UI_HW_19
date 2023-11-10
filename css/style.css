@@ -1,0 +1,319 @@
+.body {
+
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    height: 65px;
+}
+
+.logopic {
+    display: inline-block;
+    text-align: justify;
+    text-align: start;
+    width: 40px;
+    padding: 5%;
+}
+
+nav {
+    width: 70%;
+    height: 65px;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+    margin-left: -4px;
+}
+
+ul {
+    width: auto;
+    color: white;
+}
+
+li {
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.heroImg {
+    height: 25%;
+    padding: 25px;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.hero {
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    justify-content: right;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /* width: fit-content;
+    padding: 2%;
+    margin: 0 auto; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: small;
+    justify-content: center;
+    /* box-shadow: 20px 20px 60px 5px pink; */
+}
+
+.content>p {
+    margin:5px;
+    padding: 10px;
+    width: 350px;
+    justify-content: left;
+
+}
+
+#buttonDiv {
+    height: fit-content;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    padding: 5px 10px;
+}
+
+.callToAction {
+    border-radius: 20px;
+    background: var(--Portfolio-Teal, #1F4E58);
+    color: whitesmoke;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+.callToAction:hover {
+    background-color: #E4D1C0;
+    color: black;
+    border-color: #F7F0EA;
+}
+.otherBtns {
+    background-color: #F7F0EA;
+    color: black;
+    border-color: #F7F0EA;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+.otherBtns:hover {
+    background-color: #E4D1C0;
+
+}
+
+
+footer {
+    background-color: #373738;
+    padding: 25px;
+}
+
+footer>ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    color: white;
+    width: auto;
+    font-family: 'Playfair Display', serif;
+}
+
+/* UX UI HW 18 Starts here */
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* .outerDiv {
+    display: flex;
+} */
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    padding: 1%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexContainer>h3 {
+    text-align: center;
+    width: 100%;
+}
+.mySkills {
+    position: ;
+}
+.skillChip {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 2px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    font-size: smaller;
+    background: #F4F7FA;
+}
+
+.skillsDiv {
+
+}
+.toolsDiv {
+    display: none;
+}
+
+.tab1 .tab2 {
+    background-color: white;
+    color: black;
+}
+.tabBar {
+    text-align: center;
+}
+/* <!--  My UX Skills section coded using CSS flex --> */
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "cs1 cs1"
+        "cs2 cs2";
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+}
+
+.card1 {
+    grid-area: cs1;
+    border-radius: 14px;
+    border: 1px solid #AAA;
+    background: rgba(139, 112, 65, 0.35);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 2%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+.card1 p {
+    padding: 10px;
+}
+.card2 p {
+    padding: 10px;
+}
+.card2 {
+    grid-area: cs2;
+    border-radius: 14px;
+    border: 1px solid #AAA;
+    background: rgba(139, 112, 65, 0.35);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.csaImg {
+    margin: 3%;
+}
+
+.csaImg>img {
+    object-fit: cover;
+    width: 80%;
+    max-height: 100%;
+    border-radius: 14px;
+}
+
+.gridImg2 {
+    object-fit: cover;
+    margin: 3%;
+    border-radius: 14px;
+}
+
+.gridImg2>img {
+    object-fit: cover;
+    width: 80%;
+    max-height: 100%;
+}
+
+/* #CSA {
+    grid-area: csa;
+    margin: 20px;
+
+}
+
+#mhs {
+    grid-area: mhs;
+    margin: 20px;
+} */
+
+/* Style for Cards if using divs to create cards for case study */
+
+/* .card1 {
+    border-radius: 14px;
+    border: 1px solid #AAA;
+    background: rgba(139, 112, 65, 0.35);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card2 {
+    border-radius: 14px;
+    border: 1px solid #AAA;
+    background: rgba(139, 112, 65, 0.35);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} */
+
+/* <!-- My Work Section Constructed using CSS Grid --> */
+
+@media only screen and (max-width: 600px) {
+    .outerDiv {
+        flex-direction: column;
+    }
+
+    .flexContainer>* {
+        width: 100%;
+    }
+
+    .workGrid{    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-areas:
+            "cs1"
+            "cs2";
+        align-items: center;
+        justify-content: center;
+    } 
+
+    #buttonDiv {
+        position: inherit;
+    }
+    .card1 {
+        display:block;
+        text-align: center;
+    }
+    .card2 {
+        display: block;
+        text-align: center;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content>p {
+        width: 90%;
+    }
+}

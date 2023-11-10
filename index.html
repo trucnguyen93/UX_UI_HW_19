@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me Page
+    </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="Navigation">
+        <div class="inline-block logo"> <img class="logopic" src="../UX_UI_HW_17/Week 17/Mood Board/Vector 7.png">
+        </div>
+        <nav class="inline-block">
+            <ul>
+                <li class="inline-block"> About</li>
+                <li class="inline-block"> Skills </li>
+                <li class="inline-block"> Work </li>
+                <li class="inline-block"> Contact </li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="heroImg">
+        <div class="content">
+            <img class="hero" src="../UX_UI_HW_17/Week 17/IMG_20180706_144711_190 (1) 1.png">
+            <p> My name is Truc Nguyen and I am a UX/UI designer based in Toronto, Ontario. I am currently working as a
+                Customer Success Manager at Google. 
+                I bring a unique perspective to user experience design with a degree in anthropology and many years in
+                enterprise advertising sales. My business acumen and design thinking skills help drive successful
+                experiences and impact for your business and your users alike. 
+            </p>
+            <div id="buttonDiv">
+                <button class="callToAction">Featured Case Studies</button>
+                <button class="otherBtns" id="abtMe">About Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mySkills">
+        <h1>My UX Skills</h1>
+        <div class=outerDiv>
+            <div class="tabBar">
+                <button class="tab tab1 skills active otherBtns">Skills</button>
+                <button class="tab tab2 tools otherBtns">Tools</button>
+            </div>
+            <div class="flexContainer">
+                <div class="skillsDiv" id="tabContent1">
+                    <div class="skillChip">UX/UI DESIGN</div>
+                    <div class="skillChip">PRESENTATIONS</div>
+                    <div class="skillChip">HTML & CSS</div>
+                    <div class="skillChip">PROTOTYPING</div>
+                    <div class="skillChip">IDEATION & CONCEPTION</div>
+                    <div class="skillChip">DIGITAL MEDIA</div>
+                    <div class="skillChip">MEDIA STRATEGY</div>
+                    <div class="skillChip">DATA ANALYSIS</div>
+                </div>
+                <div class="toolsDiv" id="tabContent2">
+                    <div class="skillChip">FIGMA</div>
+                    <div class="skillChip">GOOGLE ANALYTICS</div>
+                    <div class="skillChip">MICROSOFT OFFICE</div>
+                    <div class="skillChip">VS CODE</div>
+                    <div class="skillChip">MIRO</div>
+                    <div class="skillChip">TABLEAU</div>
+                    <div class="skillChip">DATA STUDIO</div>
+                    <div class="skillChip">G0OGLE WORKSPACE</div>
+                    <div class="skillChip">ENTERPRISE MAR-TECH</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="myWork">
+        <h1>My Work</h1>
+        <div class="workGrid">
+            <div class="card1" id="panel">
+                <div class="csaImg"><img src="../UX_UI_HW_18/images/CSA Thumbnail.png"></div>
+                <div id="CSA">
+                    <h4>Navigation System and UI Design</h4>
+                    <p>The Canadian Space Agency does great humanitarian work with space science and exploration, but
+                        their mission is lost in the website. Without navigation, it's difficult to find your way
+                        around...</p>
+                    <button class="callToAction">Read More</button>
+                </div>
+            </div>
+
+            <div class="card2" id="panel2">
+                <div class="gridImg2"><img src="../UX_UI_HW_18/images/MHS Thumbnail.png"></div>
+                <div id="mhs">
+                    <h4>Website UI Redesign</h4>
+                    <p>The Mississauga Humane Society is a local non-profit animal shelter dedicated to rehoming cats
+                        and dogs in need. Their current website lacks cohesion and content structure ...</p>
+                    <button class="callToAction">Read More</button>
+                </div>
+            </div>
+            <!-- <div>
+                <h4></h4>
+                <p></p>
+                <button>Read More</button>
+            </div> -->
+        </div>
+        <h3>View All Projects</h3>
+    </section>
+    <footer>
+        <ul>
+            <li class="inline-block"> About</li>
+            <li class="inline-block"> Skills</li>
+            <li class="inline-block"> Work</li>
+            <li class="inline-block"> Contact</li>
+        </ul>
+
+
+    </footer>
+</body>
+
+
+<script src="js/index.js"></script>
+
+</html>
