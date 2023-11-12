@@ -1,3 +1,6 @@
+:root {
+    --badge:"M131.237 5.88756C142.399 -1.96252 157.587 -1.96252 168.762 5.88756C195.537 24.7128 189.787 22.9127 222.95 22.8127C236.8 22.7627 249.088 31.3378 253.313 44.013C263.476 74.3508 259.901 69.6632 286.801 88.3134C298.039 96.101 302.739 109.976 298.401 122.614C288.076 152.827 288.026 147.027 298.401 177.377C302.739 190.014 298.039 203.89 286.801 211.677C259.913 230.327 263.476 225.64 253.313 255.978C249.088 268.653 236.8 277.228 222.95 277.19C189.775 277.078 195.537 275.278 168.762 294.103C157.587 301.966 142.399 301.966 131.237 294.103C104.449 275.29 110.212 277.065 77.0487 277.19C63.1986 277.228 50.9109 268.653 46.6859 255.978C36.5358 225.602 40.0233 230.302 13.1855 211.677C1.96042 203.89 -2.73962 190.014 1.59792 177.377C11.9355 147.152 11.973 152.964 1.59792 122.614C-2.73962 109.976 1.96042 96.101 13.1855 88.3134C40.0108 69.7007 36.5233 74.4133 46.6859 44.013C50.9109 31.3378 63.1986 22.7627 77.0487 22.8127C110.124 22.9127 104.299 24.8253 131.237 5.88756Z";
+}
 .body {
     font-family: 'DM Sans', sans-serif;
 
@@ -6,21 +9,24 @@
     display: inline-block;
     vertical-align: top;
     font-family: 'Playfair Display', serif;
+    height: 70px;
 }
 
 .logo {
     width: 30%;
     text-align: center;
     background-color: black;
-    height: 65px;
+    height: 70px;
+    position: relative;
 }
 
 .logopic {
-    display: inline-block;
-    text-align: justify;
-    text-align: start;
-    width: 40px;
-    padding: 5%;
+    width: 50px;
+    padding: 2%;
+    margin: auto;
+    position: absolute;
+    left: 10%;
+
 }
 
 nav {
@@ -43,7 +49,9 @@ li {
 
 .heroImg {
     height: 25%;
+    max-width: 60%;
     padding: 25px;
+    margin: auto;
     text-align: center;
     /* margin: 0 auto; */
 }
@@ -53,7 +61,7 @@ li {
     object-fit: cover;
     position: relative;
     justify-content: right;
-
+    clip-path: path(var(--badge));
 }
 
 .content {
@@ -145,45 +153,50 @@ h3 {
 
 .flexContainer {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 3%;
     padding: 1%;
-    flex-wrap: wrap;
-    width: 100%;
 }
-.skillsDiv div {
-    width: 30%;
+/* .skillsDiv div {
+    width: 100%;
     padding: 25px;
-  }
+  } */
 
-.toolsDiv div {
+/* .toolsDiv div {
     width: 30%;
     padding: 25px;
     font-family: 'DM Sans', sans-serif;
-}
+} */
 .flexContainer>h3 {
     text-align: center;
     width: 100%;
 }
 
-/* .skillChip {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 2px 4px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 14px;
-    font-size: smaller;
-    background: #F4F7FA;
-} */
 
 .skillsDiv {
     font-family: 'DM Sans', sans-serif;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'DM Sans', sans-serif;
+    padding: 25px;
+}
+.skillsCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+    padding: 25px;
+    /* width: fit-content; */
 }
 .toolsDiv {
     display: none;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: space-between;
+
 }
 
 .tab1 .tab2 {
@@ -192,6 +205,37 @@ h3 {
 }
 .tabBar {
     text-align: center;
+}
+
+.cardTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+#card1 {
+    width: 33%;
+}
+#card2 {
+    width: 33%;
+}
+#card3 {
+    width: 33%;
+}
+.skillD {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+.toolsCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
 }
 /* <!--  My UX Skills section coded using CSS flex --> */
 
